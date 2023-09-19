@@ -16,7 +16,7 @@ jobs:
           command: pip install pytest
       - run:
           name: Run tests
-          command: pytest --junixtml=test-results/report.xml
+          command: pytest --junitxml=test-results/report.xml
       - store_artifacts:
           path: test-results
 
